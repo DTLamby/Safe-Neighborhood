@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Neighborhood</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #0a0f3a, #1e2a6b); 
+            color: white;
+            overflow: hidden;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo::before {
+            content: '';
+            width: 80px;
+            height: 80px;
+            background: url('img/logo.jpg') no-repeat center;
+            background-size: contain;
+            margin-right: 10px;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        
+        .main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 130px;
+            position: relative;
+            height: 40vh;
+        }
+        
+        .content {
+            max-width: 50%;
+        }
+        
+        .title {
+            font-size: 48px;
+            margin: 0;
+        }
+        
+        .subtitle {
+            font-size: 36px;
+            margin: 10px 0;
+        }
+        
+        .description {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        
+        .button {
+            background-color: #3a7ffd;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        
+        .graphic {
+            position: relative;
+            width: 40%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .shield {
+            width: 400px;
+            height: 400px;
+            background: url('img/escudo.jpg') no-repeat center; /* Reemplaza con una URL o base64 de un icono de escudo similar */
+            background-size: contain;
+            border-radius: 50%;
+            box-shadow: 0 0 50px rgba(0, 255, 255, 0.5);
+            animation: glow 2s infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); }
+            to { box-shadow: 0 0 60px rgba(0, 255, 255, 0.7); }
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(to top, white, transparent);
+            opacity: 0.2;
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 50%);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Safe Neighborhood</div>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="como-funciona.html">¿Cómo Funciona?</a>
+            <a href="explorar.html">Explorar</a>
+            <a href="premium.html">Premium</a>
+            <a href="asociaciones.html">Asociaciones</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <div class="content">
+            <h1 class="title">Safe Neighborhood:</h1>
+            <h2 class="subtitle">Startup tecnológica dedicada a fortalecer la seguridad ciudadana</h2>
+            <p class="description">
+                Nuestra misión es empoderar a las comunidades al permitir reportar incidentes de seguridad de manera precisa, compartir alertas en tiempo real y acceder a un historial detallado.
+            </p>
+            <a href="descarga.html" onclick="window.location.href = './descarga.html'; return false;" class="button">Descarga Safe Neighborhood ↓</a>
+        </div>
+        
+        <div class="graphic">
+            <div class="shield"></div>
+        </div>
+    </main>
+    
+    <div class="overlay"></div>
+</body>
+</html>

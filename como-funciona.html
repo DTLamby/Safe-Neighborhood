@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Neighborhood - ¿Cómo Funciona?</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #0a0f3a, #1e2a6b); 
+            color: white;
+            overflow: hidden;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo::before {
+            content: '';
+            width: 80px;
+            height: 80px;
+            background: url('img/logo.jpg') no-repeat center;
+            background-size: contain;
+            margin-right: 10px;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 100px 130px;
+            position: relative;
+            height: 40vh;
+        }
+        
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        
+        .number {
+            font-size: 60px;
+            font-weight: bold;
+            margin-right: 20px;
+            color: white;
+        }
+        
+        .text {
+            max-width: 60%;
+        }
+        
+        .title {
+            font-size: 28px;
+            margin: 0 0 10px 0;
+        }
+        
+        .description {
+            font-size: 16px;
+            margin: 0;
+        }
+        
+        .button {
+            background-color: #3a7ffd;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            margin-left: 20px;
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(to top, white, transparent);
+            opacity: 0.2;
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 50%);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Safe Neighborhood</div>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="como-funciona.html">¿Cómo Funciona?</a>
+            <a href="explorar.html">Explorar</a>
+            <a href="premium.html">Premium</a>
+            <a href="asociaciones.html">Asociaciones</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <div class="item">
+            <span class="number"></span>
+            <div class="text">
+                <h2 class="title">Conoce más de nuestra membresía premium</h2>
+                <p class="description">Una capa extra a tu seguridad</p>
+            </div>
+            <a href="premium.html" class="button">Llévame allá</a>
+        </div>
+        <div class="item">
+            <span class="number"></span>
+            <div class="text">
+                <h2 class="title">Preséntamos a nuestros distinguidos asociados por tu seguridad</h2>
+                <p class="description">Con el respaldo de distintas entidades de renombre</p>
+            </div>
+            <a href="asociaciones.html" class="button">Llévame allá</a>
+        </div>
+        <div class="item">
+            <span class="number"></span>
+            <div class="text">
+                <h2 class="title">Contacta con nosotros para resolver tus dudas</h2>
+                <p class="description">Disponibilidad las 24 horas del día</p>
+            </div>
+            <a href="contacto.html" class="button">Llévame allá</a>
+        </div>
+    </main>
+    
+    <div class="overlay"></div>
+</body>
+</html>

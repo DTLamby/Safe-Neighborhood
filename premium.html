@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Neighborhood - Premium</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #0a0f3a, #1e2a6b); 
+            color: white;
+            overflow: hidden;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo::before {
+            content: '';
+            width: 80px;
+            height: 80px;
+            background: url('img/logo.jpg') no-repeat center;
+            background-size: contain;
+            margin-right: 10px;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        
+        .main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 130px;
+            position: relative;
+            height: 40vh;
+        }
+        
+        .content {
+            max-width: 50%;
+        }
+        
+        .title {
+            font-size: 36px;
+            margin: 0 0 20px 0;
+        }
+        
+        .description {
+            font-size: 18px;
+            margin: 0;
+        }
+        
+        .graphic {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .pin {
+            width: 400px;
+            height: 400px;
+            background: url('img/Pdorado.jpg') no-repeat center; 
+            background-size: contain;
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(to top, white, transparent);
+            opacity: 0.2;
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 50%);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Safe Neighborhood</div>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="como-funciona.html">¿Cómo Funciona?</a>
+            <a href="explorar.html">Explorar</a>
+            <a href="premium.html">Premium</a>
+            <a href="asociaciones.html">Asociaciones</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <div class="content">
+            <h1 class="title">Añade una capa más de seguridad a tu experiencia con la membresía premium</h1>
+            <p class="description">
+                Suscríbete al plan premium de la aplicación, obtendrás nuevas características únicas como un estado detallado a fondo de reportes al momento de generarlos como alertas anticipadas, caracteristicas pensadas como actualizaciones futuras.
+                Esta membresía premium no afecta la prioridad en el momento de validar reportes, es vital que todos nuestros usuarios tengan las mismas oportunidades de protegerse.
+            </p>
+        </div>
+        
+        <div class="graphic">
+            <div class="pin"></div>
+        </div>
+    </main>
+    
+    <div class="overlay"></div>
+</body>
+</html>
